@@ -1,31 +1,92 @@
+<!--
+  207South Website
+  W Parker Mackenzie 2022
+-->
+
+<!--
+  Notice the use of %PUBLIC_URL% in the tags below.
+  It will be replaced with the URL of the `public` folder during the build.
+  Only files inside the `public` folder can be referenced from the HTML.
+    
+  Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+  work correctly both with client-side routing and a non-root public URL.
+  Learn how to configure a non-root public URL by running `npm run build`.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
+  <!-- 
+    Metadata about the document (title, scripts, style sheets, etc...)
+  -->
   <head>
+    <!--
+    Character encoding of the html document
+    -->
     <meta charset="utf-8" />
+
+    <!--
+      A favicon icon is a small image that contains one or more icons that are used to represnet the website.
+      They typically appear in places such as the browser's tab, address bar, history, etc....
+      Generally 16x16, 32x32, 48x48, or 64x64 with 8,24, or 32 bit color depth.
+    -->
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+
+    <!--
+      Setup the user's visible area of a web page to look reasonable on all devices
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- 
+      Set the suggested color that browsers should use to customize the display of the user interface.
+      Black
+    -->
     <meta name="theme-color" content="#000000" />
+
+    <!--
+      Provides a description of the web site. Used by search engines to display information about the site.
+    -->
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Projects, blog, and random thoughts by W Parker Mackenzie - husband, father, engineer, and maker from Maine"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <!--
+      Define the author of the page
+    -->
+    <meta
+      name="author"
+      content="W Parker MacKenzie"
+    />
+
+    <!--
+      Define the visual representation of the website an iOS device will use when
+      accessed by the homescreen. If this is not defined then the user will see a
+      minified version of the website which won't be very pleasant to look at.
+      Icons should be 180x180 and let the device scale them down to meet the particular
+      need.
+
+      Icon generated using favicon.io
+    -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
+    <!--
+      Defines the document's title that is shown in the browser's title bar or page
+      tab
     -->
-    <title>React App</title>
+    <title>207 South</title>
+
   </head>
+
+  <!--
+    Content of the html document
+  -->
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
