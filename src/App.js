@@ -1,5 +1,9 @@
+// 3rd party libraries
 import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+
+// Pages
+import {Home} from './pages/home.js';
 
 /*
 Return multiple elements in a fragment without adding extra
@@ -25,10 +29,13 @@ function App() {
      its component (function/class) is invoked. The react router allows
      this to happen while preserving user state.
 
-     Anything outside of the BrowserRouter router component will be
-     rendered on every page. As well as anything just before the 
-     Routes. It is unclear to me if one method is prefered over the
-     other or why. 
+     This means all of the pages associated with the client side routes
+     are downloaded to the client upon loading of the website. 
+
+     If a client route is not indicated in the following list of 
+     routes then it means references will use server side routing,
+     in which a new page will be loaded (an HTTP request of the server)
+     each time the link is selected.
 
      More information: https://reactrouter.com/web/guides/quick-start 
     */
@@ -39,12 +46,6 @@ function App() {
         </Routes>
       </BrowserRouter>
 
-  );
-}
-
-function Home() {
-  return(
-    <h1> Hello this is the foundation for my new website</h1>
   );
 }
 
