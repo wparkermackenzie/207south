@@ -9,7 +9,7 @@ import img_lighthouse from '../media/lighthouse.svg'
 function Home() {
   return(
     <>
-    <img src={img_lighthouse} height={64} />
+    <img src={img_lighthouse} height={64} alt='A lighthouse' />
     <h1>Welcome to 207South.</h1>
     <p>
 First and foremost, this is my online playground for experimenting and learning new (and some not so new) technologies. I am unapologetic in the completeness of any work you may find here; much of what you will find here are experiments. The minimum viable product is to learn something to either satisfy a curiosity or to enhance my career. 
