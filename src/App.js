@@ -4,6 +4,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 // Pages
 import {Home} from './pages/home.js';
+import {Footer} from './components/footer.js'
 
 /*
 Return multiple elements in a fragment without adding extra
@@ -40,11 +41,14 @@ function App() {
      More information: https://reactrouter.com/web/guides/quick-start 
     */
 
+    <>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />}/>
         </Routes>
+        <Footer />
       </BrowserRouter>
+    </>
 
   );
 }
