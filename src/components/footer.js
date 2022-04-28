@@ -3,18 +3,26 @@ import {Link} from 'react-router-dom';
 
 function Footer() {
   return(
-    <footer>
-      <Link to='/'>Home</Link>|{" "}
+    <div class='container'>
+      <footer class='row'>
+        <div class='col'>
+          <Link to='/'>Home</Link>
+        </div>
 
-      <a href='mailto:wparkermackenzie@outlook.com'>
-        E-Mail
-      </a>|{" "}
+        <div class='col'>
+          <a href='mailto:wparkermackenzie@outlook.com'>
+            E-Mail
+          </a>
+        </div>
 
-      <a href='https://www.linkedin.com/in/wmackenzie/'>
-        LinkedIn
-      </a>
+        <div class='col'>
+          <a href='https://www.linkedin.com/in/wmackenzie/'>
+            LinkedIn
+          </a>
+        </div>
 
-    </footer>
+      </footer>
+    </div>
   )
 }
 
